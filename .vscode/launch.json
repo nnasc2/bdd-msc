@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Rodar gherkin_engine",
+            "type": "python",
+            "request": "launch",
+            "program": "gherkin_engine.py",
+            "args": ["docs/login.txt"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Rodar script bash",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "bash processar.sh"
+        }
+    ]
+}

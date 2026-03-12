@@ -1,0 +1,11 @@
+Feature: Login do usuário
+
+  Scenario: Login com sucesso
+    Given o usuário está na página de login
+    When ele insere credenciais válidas
+    Then ele é redirecionado para o dashboard
+
+  Scenario: Login com senha errada
+    Given o usuário está na página de login
+    When ele insere a senha incorreta
+    Then uma mensagem de erro é exibida
